@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/davidvivanco/developer/static/css/main.23b1f40f.css",
+    "main.js": "/davidvivanco/developer/static/js/main.670acaae.js",
+    "static/js/787.1ed0c42c.chunk.js": "/davidvivanco/developer/static/js/787.1ed0c42c.chunk.js",
+    "index.html": "/davidvivanco/developer/index.html",
+    "main.23b1f40f.css.map": "/davidvivanco/developer/static/css/main.23b1f40f.css.map",
+    "main.670acaae.js.map": "/davidvivanco/developer/static/js/main.670acaae.js.map",
+    "787.1ed0c42c.chunk.js.map": "/davidvivanco/developer/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23b1f40f.css",
+    "static/js/main.670acaae.js"
+  ]
+}
