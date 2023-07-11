@@ -1,0 +1,55 @@
+@import './styles/utils/responsive';
+
+.demo-img,
+.windows-img {
+  transition: 0.3s;
+}
+
+.demo-img:hover {
+  transform: scale(1.15);
+}
+
+.windows-img:hover {
+  transform: scale(1.15);
+}
+
+.MuiChip-label {
+  padding-left: 5px !important;
+}
+
+.linkedin-button {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 0.55rem 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0b65c2;
+  background-color: transparent;
+  color: #0b65c2;
+  cursor: pointer;
+  max-width: 135px;
+  transition: 0.3s ease-in-out;
+  @include screen-mobile {
+    font-size: 12px;
+  }
+  svg {
+    margin-left: 3px;
+    fill: #0b65c2;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.linkedin-button:hover {
+  background-color: #0b65c2;
+  box-shadow: 4px 4px 0 0 #333;
+  -webkit-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
+  color: white;
+  svg {
+    fill: white;
+  }
+}

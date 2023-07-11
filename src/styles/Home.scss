@@ -1,0 +1,40 @@
+.main {
+  margin-top: 5%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  img {
+    border-radius: 2px;
+  }
+}
+
+.button {
+  text-transform: uppercase;
+  display: flex;
+  margin-top: 15px;
+  padding: 0.75rem 1.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333;
+  background-color: transparent;
+  cursor: pointer;
+  max-width: 115px;
+  transition: 0.3s ease-in-out;
+  svg {
+    margin-left: 5px;
+  }
+}
+
+.button:hover {
+  background-color: #bbeec8;
+  box-shadow: 4px 4px 0 0 #333;
+  -webkit-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
+  color: #333;
+}
+
+.calendly-link {
+  font-size: 14px;
+}
+

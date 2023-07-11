@@ -1,0 +1,68 @@
+$mobile-breakpoint: 568px;
+$tablet-breakpoint: 960px;
+
+@mixin screen-mobile {
+  @include screen-custom(0px, $mobile-breakpoint - 1px) {
+    @content;
+  }
+}
+
+@mixin screen-tablet-and-mobile {
+  @include screen-custom(0px, $tablet-breakpoint - 1px) {
+    @content;
+  }
+}
+
+@mixin screen-desktop {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin screen-tablet-and-desktop {
+  @media (min-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+// Custom screen media query, only use it when some
+// device resolution significantly breaks the design
+@mixin screen-custom($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin screen-custom-max($max) {
+  @media (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin screen-tablet {
+  @include screen-custom($mobile-breakpoint, $tablet-breakpoint - 1px) {
+    @content;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.hide-mobile {
+  @include screen-mobile {
+    display: none !important;
+  }
+}
+
+.hide-desktop {
+  @include screen-desktop {
+    display: none !important;
+  }
+}
+
+.hide-tablet {
+  @include screen-tablet {
+    display: none !important;
+  }
+}
